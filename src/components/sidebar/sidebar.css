@@ -1,0 +1,89 @@
+#sidebar {
+    width: 80px;
+    min-height: 100vh;
+    background-color: #1e1f20;
+     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 99999999;
+}
+#sidebar.expanded {
+    width: 18rem ;
+    transition: all 0.3s ease;
+}
+
+
+#sidebar * {
+    transition: all 0.3s ease;
+}
+
+#top {
+    margin-top: 1rem;
+    position: fixed;
+    top: 0;
+    left: 1rem;
+}
+
+#top .menuToggleIcon {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ccc;
+    cursor: pointer;
+}
+
+#top .createNewChatButton {
+    cursor: pointer;
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    color: #ccc;
+    border-radius: 1rem
+}
+#top h3,
+#bottom h3,
+#bottom footer,
+#top .chat-item,
+#bottom .chat-item {
+    color: #ccc;
+}
+
+#top .chat-items .chat-item,
+#bottom .chat-items .chat-item {
+    padding: 0.3rem;
+    margin-top: 0.1rem;
+    cursor: pointer;
+    width: auto;
+}
+
+#top .chat-items .chat-item:hover,
+#bottom .chat-items .chat-item:hover {
+    background-color: #111;
+}
+#top .chat-item span,
+#bottom .chat-item span {
+    margin-left: 1rem;
+    flex: auto;
+}
+
+#top .menuToggleIcon:hover,
+#top .createNewChatButton:hover{
+    background-color: #111;
+    color: #fff
+}
+
+#bottom {
+    position: fixed;
+    bottom: 0;
+    left: 1rem;
+    width: auto;
+    padding-bottom: 1rem;
+}
+
+#sidebar.expanded #bottom * {
+    max-width: 12rem ;
+}

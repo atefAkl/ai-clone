@@ -1,0 +1,265 @@
+#main   {
+    flex: auto;
+    background-color: #111;
+    position: relative;
+}
+#main header {
+    background-color: #111;
+    display: flex;
+    position: sticky;
+    top:0;
+    color: #fff;
+    justify-content: space-between;
+    padding: 0.2rem 2rem;
+}
+#main h2 {
+    font-weight: normal;
+}
+#main header span.user-icon {
+    background-color: #666;
+    border: 3px solid #333;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#main header span.user-icon img {
+    width: 50px;
+    height: 50px;
+    
+}
+#main #notes,
+#main .help {
+    color: #ccc;
+}
+#main .help .help-title {
+    font-size: 40px;
+}
+#main .help .help-title h1 {
+    background-image: linear-gradient(to right, #6a89cc 5%, #c0392b 40%);
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+#main .help .help-title h1 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+#main .help .help-title p
+{
+     font-size: 3rem;
+     color: #777;
+     margin-bottom: 1rem;
+}
+#main .help .cards {
+    display: flex;
+    gap: 1rem
+}
+#main .help .cards .card {
+    flex: 1;
+    min-width: 200px;
+    height: 220px;
+    position: relative;
+    background-image: linear-gradient(#222, #333);
+    border-radius: .7rem;
+}
+#main .help .cards .card:hover {
+    background-image: linear-gradient(#333, #444);
+
+}
+#main .help .cards p {
+    font-size: 1.5rem 1.3rem;
+    text-align: justify;
+    padding: 1rem;
+}
+#main .help .cards .card-footer {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#main .help .cards .card-footer-icon {
+    margin: 1rem;
+    height: 40px;
+    width: 40px;
+    background-color: #333;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+#main .help .cards .card:hover .card-footer-icon {
+    background-color: #222;
+}
+#main #notes {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-image: linear-gradient(#222, #333);
+    border-radius: 0.7rem;
+}
+#main #notes .notes-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+    padding: 20px;
+
+}
+#main #notes .notes-text {
+    font-size: 1rem;
+    padding: 20px;
+
+}
+#main #notes .notes-text button {
+    color: #6a89cc;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0.5rem 0;;
+    font-size: 1.1rem;
+    margin: 0.8rem auto 0;
+}
+#main footer {
+    box-shadow: 0 0 15px 5px #090909; 
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 1rem 0;
+    background-color: #111;
+}
+
+#main footer form {
+    width: 80%;
+    padding: 0.5rem 1.2rem;
+    margin: auto;
+    gap: 0.5rem;
+    display: flex;
+    background-color: #333;
+    border-radius: 0.7rem;
+    justify-content: space-between;
+}
+#main footer form .input {
+    flex: auto;
+}
+#main footer form input {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    color: #FFF;
+    font-size: 1.1rem;
+    padding: 0.9rem;
+    width: 100%;
+}
+#main footer form .form-btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: #333;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 50px;
+    border: 0;
+    outline: 0;
+}
+#main footer form .form-btn:hover {
+    background-color: #222;
+}
+#main footer p {
+    padding-top: 0.8rem;
+    text-align: center;
+}
+#main footer p a {
+    color: #6a89cc;
+}
+
+#main #result {
+    min-height: 70vh;
+    color: #fff
+}
+#main #result .question,
+#main #result .answer {
+    background-color: #fff2;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+#main #result .question {
+    
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+#main #result .answer {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #ccc;
+}
+
+
+
+#main #result .answer h2,
+#main #result .answer h3{
+    padding: .5rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+#main #result .answer p
+ {
+    padding: 1rem 0.5rem;
+}
+#main #result .answer ul,
+#main #result .answer ol {
+    padding: 1rem 1rem 1rem 2rem;
+}
+#main #result .answer ul {
+    list-style-type: square;
+}
+
+#main #result .answer pre {
+    background-color: #000;
+    padding: 1rem;
+    border-left: 25px solid green;
+}
+
+#main #result .answer pre {
+    
+}
+
+#main #result .answer img,
+#main #result .question img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;;
+}
+/* Animation  */
+.loader {
+  width: 100%;
+  display: grid;
+  gap: 8px;
+}
+.loader .bar  {
+  width: 100%;
+  height: 20px;
+  background-image: linear-gradient(to right, #ccc, #fff, #eee, #777, #ccc);
+  background-size: 1000px 50px;
+  background-position: 0 0;
+  animation: load 1.5s infinite linear
+}
+
+@keyframes load {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+/* End of Animation */
